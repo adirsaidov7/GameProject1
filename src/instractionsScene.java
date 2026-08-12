@@ -15,7 +15,6 @@ public class instractionsScene extends JPanel{
       instractionsText.setFont(new Font("Times New Roman",Font.PLAIN,50));
 
       this.add(instractionsText);
-johbizfuyt7xdff,jfhyjkl
 
   }
 }
