@@ -26,6 +26,7 @@ public class homePage extends JPanel {
         JButton gameButton = new JButton("TO THE GAME");
         gameButton.setBounds(width/2 - BUTTON_WIDTH/2,height/3 * 2,BUTTON_WIDTH,BUTTON_HEIGHT);
         this.add(gameButton);
+        ydjgdg
 
     }
 
