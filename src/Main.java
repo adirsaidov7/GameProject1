@@ -10,9 +10,9 @@ public class Main {
         game.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         game.setResizable(false);
         game.setLayout(null);
+        game.add(new gameScene(0,0,WINDOW_WIDTH,WINDOW_HEIGHT));
 
-        game.add(new homePage(WINDOW_WIDTH,WINDOW_HEIGHT));
-
+       // game.add(new homePage(WINDOW_WIDTH,WINDOW_HEIGHT));
 
 
     }

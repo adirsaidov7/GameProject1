@@ -17,10 +17,10 @@ public class homePage extends JPanel {
 
         JButton instractionsButton = new JButton("INSTRACTIONS");
         instractionsButton.setBounds(width/2 - BUTTON_WIDTH/2,height/3,BUTTON_WIDTH,BUTTON_HEIGHT);
-        instractionsButton.addActionListener(() -> {
+        //instractionsButton.addActionListener(() -> {
 
 
-        });
+        //});
         this.add(instractionsButton);
 
         JButton gameButton = new JButton("TO THE GAME");
