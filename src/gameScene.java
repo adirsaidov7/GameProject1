@@ -18,6 +18,7 @@ public class gameScene extends JPanel {
         new Thread(()->{
            while(true){
                System.out.println(this.player.getX());
+              this.repaint();
 
           }
        }).start();
@@ -25,6 +26,8 @@ public class gameScene extends JPanel {
 
 
     public void paint(Graphics graphics) {
+        super.paint(graphics);
         this.player.draw(graphics);
+
     }
 }
