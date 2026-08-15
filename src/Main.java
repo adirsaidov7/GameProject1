@@ -11,7 +11,9 @@ public class Main {
         game.setResizable(false);
         game.setLayout(null);
 
-         game.add(new homePage(WINDOW_WIDTH,WINDOW_HEIGHT,game));
+        game.add(new homePage(WINDOW_WIDTH,WINDOW_HEIGHT));
+
+
 
     }
 }
