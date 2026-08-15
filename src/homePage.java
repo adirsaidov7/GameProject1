@@ -18,15 +18,15 @@ public class homePage extends JPanel {
         JButton instractionsButton = new JButton("INSTRACTIONS");
         instractionsButton.setBounds(width/2 - BUTTON_WIDTH/2,height/3,BUTTON_WIDTH,BUTTON_HEIGHT);
         instractionsButton.addActionListener( e -> {
-            pagesManager.switchBetweenPages(new instractionsScene(width, height),frame);
+            pagesManager.switchBetweenPages(new instractionsScene(width, height, frame),frame);
         });
         this.add(instractionsButton);
 
         JButton gameButton = new JButton("TO THE GAME");
         gameButton.setBounds(width/2 - BUTTON_WIDTH/2,height/3 * 2,BUTTON_WIDTH,BUTTON_HEIGHT);
-//        instractionsButton.addActionListener( e -> {
-//            switchBetweenPages(new gameScene(width,height), frame);
-//        });
+        gameButton.addActionListener( e -> {
+          pagesManager.switchBetweenPages(new gameScene(0,0,width,height,frame), frame);
+        });
         this.add(gameButton);
     }
 

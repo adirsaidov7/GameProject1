@@ -17,14 +17,23 @@ public class player {
      graphics.fillRect(this.x,this.y,width,height);
     }
     public void moveRight() {
-        this.x++;
-        System.out.println("the players x is: " + this.x);
+        this.x+= 10;
     }
     public void moveLeft() {
-        this.x--;
+        this.x-=10;
     }
     public int getX() {
         return x;
+    }
 
+
+    public int getY(){
+        return y;
+    }
+    public int getWidth() {
+        return width;
+    }
+    public int getHeight() {
+        return height;
     }
 }

@@ -14,11 +14,14 @@ public class movementListener implements KeyListener {
     }
     @Override
     public void keyPressed(KeyEvent e) {
-        //if (e.getKeyCode() == KeyEvent.VK_LEFT) {
-            System.out.println("pressed");
-        this.player.moveRight();
+        if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+        this.player.moveLeft();
 
-       // }
+        }
+        if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+            this.player.moveRight();
+
+        }
     }
     @Override
     public void keyReleased(KeyEvent e) {}
