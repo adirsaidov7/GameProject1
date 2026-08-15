@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class skins extends JPanel {
     public static final int BUTTONS_SPACE = 125;
@@ -15,6 +16,8 @@ public class skins extends JPanel {
         JButton orange = new JButton("ORANGE");
         orange.setBounds(BUTTONS_SPACE,height/6,BUTTONS_WIDTH,BUTTONS_HEIGHT);
         orange.addActionListener(e -> {
+            gameScene.ballColor = Color.ORANGE;
+            pagesManager.switchBetweenPages(new gameScene(0,0,width,height,frame),frame);
 
         });
         this.add(orange);
@@ -22,14 +25,16 @@ public class skins extends JPanel {
         JButton blue = new JButton("BLUE");
         blue.setBounds(BUTTONS_WIDTH + 2*BUTTONS_SPACE,height/6,BUTTONS_WIDTH,BUTTONS_HEIGHT);
         blue.addActionListener(e -> {
-
+            gameScene.ballColor = Color.BLUE;
+            pagesManager.switchBetweenPages(new gameScene(0,0,width,height,frame),frame);
         });
         this.add(blue);
 
         JButton red = new JButton("RED");
         red.setBounds(2*BUTTONS_WIDTH + 3*BUTTONS_SPACE,height/6,BUTTONS_WIDTH,BUTTONS_HEIGHT);
         red.addActionListener(e -> {
-
+            gameScene.ballColor = Color.RED;
+            pagesManager.switchBetweenPages(new gameScene(0,0,width,height,frame),frame);
         });
         this.add(red);
 

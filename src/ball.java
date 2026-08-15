@@ -14,6 +14,7 @@ public class ball {
     double vx;
     double vy;
 
+
     public ball(int x, int y) {
         this.x = x;
         this.y = y;
@@ -29,8 +30,9 @@ public class ball {
         this.vy = speed * Math.sin(radians);
     }
 
+
     public void draw(Graphics graphics) {
-        graphics.setColor(Color.RED);
+        graphics.setColor(gameScene.ballColor);
         graphics.fillOval(x, y, size, size);
     }
 
@@ -39,7 +41,7 @@ public class ball {
         y += vy;
 
 
-        if (y <= 0 || y + size >= 570)
+        if (y <= 0 )
             vy = -vy;
         if (x <= 0 || x + size >= 790 )
                 vx = -vx;
