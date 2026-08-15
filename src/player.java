@@ -13,18 +13,19 @@ public class player {
         this.y = y;
 
     }
-   public void draw(Graphics graphics) {
-     graphics.fillRect(this.x,this.y,width,height);
-    }
     public void moveRight() {
         this.x++;
         System.out.println("the players x is: " + this.x);
     }
     public void moveLeft() {
+
         this.x--;
     }
     public int getX() {
         return x;
 
+    }
+    public void draw(Graphics graphics) {
+        graphics.fillRect(this.x,this.y,width,height);
     }
 }

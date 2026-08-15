@@ -4,7 +4,6 @@ public class Main {
     public static final int WINDOW_HEIGHT = 600;
     public static void main(String[] args) {
         JFrame game = new JFrame();
-        game.setVisible(true);
         game.setSize(WINDOW_WIDTH,WINDOW_HEIGHT);
         game.setLocationRelativeTo(null);
         game.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -12,6 +11,7 @@ public class Main {
         game.setLayout(null);
 
         game.add(new homePage(WINDOW_WIDTH,WINDOW_HEIGHT, game));
+        game.setVisible(true);
 
 
 
